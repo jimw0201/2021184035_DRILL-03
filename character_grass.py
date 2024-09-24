@@ -7,9 +7,11 @@ grass = load_image("grass.png")
 boy = load_image("character.png")
 
 def run_rectangle():
+    print('RECTANGLE')
     pass
 
 def run_circle():
+    print('CIRCLE')
     pass
 
 while True:
