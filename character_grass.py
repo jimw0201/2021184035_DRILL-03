@@ -11,7 +11,7 @@ def draw(x, y):
     clear_canvas_now()
     boy.draw_now(x, y)
     grass.draw_now(400, 30)
-    delay(0.001)
+    delay(0.01)
 
 def run_top():
     print('TOP')
@@ -43,10 +43,23 @@ def run_rectangle():
     pass
 
 def run_tri_bottom():
+    print('TRI_BOTTOM')
+    for x in range(100, 700, 10):
+        draw(x, 90)
     pass
 def run_tri_right():
+    print('TRI_RIGHT')
+    for i in range(0, 31):
+        x = 700 - (300 / 30) * i
+        y = 90 + (460 / 30) * i
+        draw(x, y)
     pass
 def run_tri_left():
+    print('TRI_LEFT')
+    for i in range(0, 31):
+        x = 400 - (300 / 30) * i
+        y = 550 - (460 / 30) * i
+        draw(x, y)
     pass
 
 def run_triangle():
