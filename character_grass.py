@@ -15,6 +15,7 @@ def draw(x, y):
 
 def run_top():
     print('TOP')
+    for x in range(20, 780, 10):
         draw(x, 550)
     pass
 def run_right():
@@ -41,6 +42,20 @@ def run_rectangle():
     run_left()
     pass
 
+def run_tri_bottom():
+    pass
+def run_tri_right():
+    pass
+def run_tri_left():
+    pass
+
+def run_triangle():
+    print('TRIANGLE')
+    run_tri_bottom()
+    run_tri_right()
+    run_tri_left()
+    pass
+
 def run_circle():
     print('CIRCLE')
 
@@ -53,8 +68,9 @@ def run_circle():
     pass
 
 while True:
-    run_rectangle()
-    run_circle()
+    # run_rectangle()
+    run_triangle()
+    # run_circle()
     break
 
 close_canvas()
