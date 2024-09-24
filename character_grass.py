@@ -84,6 +84,5 @@ while True:
     run_rectangle()
     run_triangle()
     run_circle()
-    break
 
 close_canvas()
