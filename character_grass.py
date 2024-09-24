@@ -15,36 +15,36 @@ def draw(x, y):
 
 def run_top():
     print('TOP')
-    for x in range(20, 780, 10):
+    for x in range(780, 20, -10):
         draw(x, 550)
     pass
 def run_right():
     print('RIGHT')
-    for y in range(550, 90, -10):
+    for y in range(90, 550, 10):
         draw(780, y)
     pass
 def run_bottom():
     print('BOTTOM')
-    for x in range(780, 20, -10):
+    for x in range(20, 780, 10):
         draw(x, 90)
     pass
 def run_left():
     print('LEFT')
-    for y in range(90, 550, 10):
+    for y in range(550, 90, -10):
         draw(20, y)
     pass
 
 def run_rectangle():
     print('RECTANGLE')
-    run_top()
-    run_right()
     run_bottom()
+    run_right()
+    run_top()
     run_left()
     pass
 
 def run_tri_bottom():
     print('TRI_BOTTOM')
-    for x in range(100, 700, 10):
+    for x in range(120, 701, 10):
         draw(x, 90)
     pass
 def run_tri_right():
