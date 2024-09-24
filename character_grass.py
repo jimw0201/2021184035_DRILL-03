@@ -81,9 +81,9 @@ def run_circle():
     pass
 
 while True:
-    # run_rectangle()
+    run_rectangle()
     run_triangle()
-    # run_circle()
+    run_circle()
     break
 
 close_canvas()
